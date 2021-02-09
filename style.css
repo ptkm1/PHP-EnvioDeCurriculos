@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins';
+}
+
+.container {
+  background: #FFFFFF;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.menu li {
+  width: max-content;
+  margin-left: 10px;
+}
+
+.logo {
+  width: max-content;
+  height: max-content;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.inputAndText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.firstPart {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.centralize {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.gradientButton {
+  width: 300px;
+  height: 56px;
+  background: linear-gradient(90deg, #5CBF8F 0%, #40CDF8 100%);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  color: white;
+  margin-top: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.gradientButton:hover {
+  background: linear-gradient(90deg, #5CBF8F 10%, #40CDF8 90%);
+  transition: 1s;
+}
+
+.firstPart p {
+  width: 50%;
+  color: gray;
+}
+
+#myform button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  transition: all 0.5s;
+  background: #4464b4;
+  color: white;
+  cursor: pointer;
+}
+
+#myform button:hover {
+  transition: all 0.5s;
+  background: #4d71ca;
+  color: white;
+}
+
+#myform input, select, options {
+  width: 300px;
+  height: 55px;
+  padding-left: 5px;
+  font-size: 17px;
+  border: none;
+  background: #F5F5F5;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: .5em;
+}
+
+#myform select {
+  display: block;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #444;
+  line-height: 1.3;
+  padding: .6em 1.4em .5em .8em;
+  width: 100%;
+  max-width: 100%;
+  /* useful when width is set to anything other than 100% */
+  box-sizing: border-box;
+  margin: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  /* note: bg image below uses 2 urls. The first is an svg data uri for the arrow icon, and the second is the gradient. 
+    for the icon, if you want to change the color, be sure to use `%23` instead of `#`, since it's a url. You can also swap in a different svg icon or an external image reference
+    
+  */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  background-repeat: no-repeat, repeat;
+  /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+  background-position: right .7em top 50%, 0 0;
+  /* icon size, then gradient */
+  background-size: .65em auto, 100%;
+}
+
+#video {
+  width: 60%;
+}
+
+.secondpart {
+  margin-top: 255px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#secondpart-1, #secondpart-2, #secondpart-3, #secondpart-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
+
+#FormNewsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+#FormNewsletter input {
+  width: 300px;
+  height: 55px;
+  padding-left: 5px;
+  font-size: 17px;
+  border: none;
+  background: #F5F5F5;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: .5em;
+  margin-top: 15px;
+}
+
+#FormNewsletter button {
+  margin-top: 15px;
+  width: 300px;
+  height: 55px;
+  background: #3A5598;
+  font-weight: bold;
+  color: white;
+  border-radius: .5em;
+  border: none;
+  cursor: pointer;
+}
+
+#FormNewsletter button:hover {
+  background: #4464b4;
+}
+
+footer {
+  border-top: solid gray 1px;
+  width: 100%;
+  height: 55px;
+  padding: 50px 220px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 150px;
+  margin: 0 auto;
+}
+
+.inputAndText i {
+  color: royalblue;
+  font-size: 55px;
+  margin-left: 25px;
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.5s;
+  cursor: pointer;
+}
+
+.inputAndText i:hover {
+  color: gray;
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.5s;
+}
+
+.first {
+  border: solid;
+}
